@@ -87,6 +87,10 @@ footer {
   margin-left: auto;
 }
 
+.share-button-bg:hover {
+  cursor: pointer;
+}
+
 .share-popup {
   display: none;  
   position: absolute;
@@ -123,4 +127,32 @@ footer {
 
 .share-popup img {
   height: 20px;
+}
+
+/* MOBILE */ 
+@media only screen and (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    margin-top: 64.5px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-img {
+    width: 345px;
+    margin-left: -17px; /* to offset object position 17px */ 
+    object-position: 17px -16px;
+    height: 213px;
+  }
+
+  section {
+    width: 258px;
+    padding: 35px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
 }
